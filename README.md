@@ -1,7 +1,6 @@
 ```
 Name: Robin Shrestha
 ```
-
 ## Project Name
 This project is a basic Express.js server application that listens for HTTP requests, logs the body of POST requests, and sends the request body back as a response.
 
