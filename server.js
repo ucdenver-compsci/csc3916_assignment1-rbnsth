@@ -10,7 +10,6 @@ app.use(bodyParser.text({
     }
 }));
 
-
 // Parse bodies of POST requests
 app.post('/', (req, res) => {
     console.log(req.body);
@@ -26,5 +25,5 @@ app.post('/', (req, res) => {
 // Start the server
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+    console.log('Server listening on port ' + port);
 });

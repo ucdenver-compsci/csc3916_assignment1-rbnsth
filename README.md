@@ -1,43 +1,35 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13588965&assignment_repo_type=AssignmentRepo)
-# Assignment One
-## Purpose
-The purpose of this assignment is to setup your GitHub and Heroku (or Rendor) instances for future assignments
+```
+Name: Robin Shrestha
+```
 
-You will create a Postman collection and create a REST test within the project. You will need to automate each test and include at least 1 assert for each request in the validation.
+## Project Name
+This project is a basic Express.js server application that listens for HTTP requests, logs the body of POST requests, and sends the request body back as a response.
 
-## Requirements
-- Sign-up for a free GitHub account: https://github.com/ – Homework assignments will be stored on GitHub.
-- Create an ECHO server (from lecture) 
-- Setup Heroku (or Rendor) to autodeploy your application from your REPO CSC3916_HW1
-- Create a PostMan request that posts a body value to your API 
-    - Create an environment variable $echo_body for the body of the request
-    - Asserts (test) must include
-        - Validating string sent is what is returned  (use $echo_body to validate against the response sent back from the server)
-        - Response status code (e.g. 200)
-        - Response time < 200ms
 
-## Submissions
-- All source code should be stored on github (remember .gitignore for node_modules)
-- API needs to be deployed to heroku
-- Create a readme.md at the root of your github repository with the embedded (markdown) to your test collection
-    - Within the collection click the (…), share collection -> Embed
-    - Static Button
-    - Click update link
-    - Include your environment settings
-    - Copy to clipboard 
-- Submit the Url to canvas with the REPO CSC_3916
-- Note: All tests should be testing against your Heroku or Rendor endpoint
+## Installation
+To install and set up this project, follow these steps:
 
-## Rubic
-- -5 - Not deployed to Heroku or Rendor
-- -5 - Missing Postman Test
-- -1 - For each missing assert (test)
+- Ensure that you have Node.js installed on your machine. 
 
-## Resources
-- http://nodejs.org
-- http://www.passportjs.org/docs/basic-digest/
-- https://devcenter.heroku.com/articles/heroku-cli 
-- https://devcenter.heroku.com/articles/config-vars 
-- https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+- Clone this repository to your local machine.
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/32232262-8a0fa63d-69fb-4939-a4a8-185b9b020aa8?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D32232262-8a0fa63d-69fb-4939-a4a8-185b9b020aa8%26entityType%3Dcollection%26workspaceId%3Dca3c3d1e-eea4-46ea-b8aa-d5044f56b4cf#?env%5BRobin_HW1%5D=W3sia2V5IjoiZWNob1NvdW5kIiwidmFsdWUiOiJoZWxsbyB3b3JsZCIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJkZWZhdWx0Iiwic2Vzc2lvblZhbHVlIjoiSGVsbG8gV29ybGQhISEhIiwic2Vzc2lvbkluZGV4IjowfV0=)
+- Navigate to the project directory in your terminal.
+
+- Run ``npm install`` to install the necessary dependencies (Express and Body-Parser).
+
+## Usage
+To use this project:
+
+Start the server by running node `node server.js` in your terminal.
+
+The server will start listening on port 8000, or the port specified in your environment variables.
+
+Send a POST request to http://localhost:8000/ with any content. The server will log the request body and send it back as a response.
+
+## Postman Enviroment: 
+- Collection: CSCI3916_HW1
+
+- Enviroment: Robin_HW1
+
+## Postman Link
+
